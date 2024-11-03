@@ -24,5 +24,4 @@ public class KhachHang {
     public void setKh_name(String kh_name) {
         this.kh_name = kh_name;
     }
-
 }

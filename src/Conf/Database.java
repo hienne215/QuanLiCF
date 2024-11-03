@@ -16,7 +16,7 @@ public class Database {
     public static void connect(String host, int port, String user, String password, String dbname) {
         Database.connection = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             String dbURL = "jdbc:mysql://" + host + ":" + port +"/" + dbname;
             Database.connection = DriverManager.getConnection(dbURL, user, password);
         } catch (Exception ex) {

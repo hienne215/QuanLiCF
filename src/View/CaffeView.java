@@ -5,7 +5,7 @@ import Model.Menu;
 
 public class CaffeView {
     public void hienThiThongBaoThemDoUong(Menu menu) {
-        System.out.println("Đã thêm đồ uống: " + menu.getLoai() + " vào thực đơn.");
+        System.out.println("Đã thêm đồ uống: " + menu.getLoaiDoUong() + " vào thực đơn.");
     }
 
     public void hienThiThongBaoThemKhachHang(KhachHang khachHang) {

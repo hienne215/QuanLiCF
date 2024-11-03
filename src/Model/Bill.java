@@ -1,24 +1,23 @@
 package Model;
 
 public class Bill {
-    private int Billid;
+    private int billid;
     private Order order;
     private Menu menu;
+   public Bill(){};
 
-    public Menu getMenu() {
-        return menu;
-    }
-
-    public void setMenu(Menu menu) {
+    public Bill(int billid, Order order, Menu menu) {
+        this.billid = billid;
+        this.order = order;
         this.menu = menu;
     }
 
     public int getBillid() {
-        return Billid;
+        return billid;
     }
 
     public void setBillid(int billid) {
-        Billid = billid;
+        this.billid = billid;
     }
 
     public Order getOrder() {
@@ -29,15 +28,15 @@ public class Bill {
         this.order = order;
     }
 
-    public Bill() {
+    public Menu getMenu() {
+        return menu;
     }
 
-    public Bill(int Billid, Order order, Menu menu) {
-        this.Billid = Billid;
-        this.order = order;
+    public void setMenu(Menu menu) {
         this.menu = menu;
     }
+
     public double Thanhtien(){
-        return (getMenu().getGia()*getOrder().getSoluong());
+        return (getMenu().getDonGia()*getOrder().getSoLuong());
     }
 }

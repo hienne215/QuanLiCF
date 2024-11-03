@@ -3,24 +3,24 @@ package Model;
 import java.util.Date;
 
 public class Order {
-    private long Orderid;
+    private long orderId;
     private Date date;
     private Menu menu;
-    private int Soluong;
+    private int soLuong;
     public Order(){}
-    public Order(long orderid, Date date, Menu menu, int soluong) {
-        Orderid = orderid;
+    public Order(long orderId, Date date, Menu menu, int soLuong) {
+        this.orderId = orderId;
         this.date = date;
         this.menu = menu;
-        Soluong = soluong;
+        this.soLuong = soLuong;
     }
 
-    public long getOrderid() {
-        return Orderid;
+    public long getOrderId() {
+        return orderId;
     }
 
-    public void setOrderid(long orderid) {
-        Orderid = orderid;
+    public void setOrderId(long orderId) {
+        this.orderId = orderId;
     }
 
     public Date getDate() {
@@ -39,11 +39,11 @@ public class Order {
         this.menu = menu;
     }
 
-    public int getSoluong() {
-        return Soluong;
+    public int getSoLuong() {
+        return soLuong;
     }
 
-    public void setSoluong(int soluong) {
-        Soluong = soluong;
+    public void setSoLuong(int soLuong) {
+        this.soLuong = soLuong;
     }
 }

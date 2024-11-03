@@ -1,47 +1,57 @@
 package Model;
 
 public class Menu {
-    private String menuten;
-    private long menuid;
-    private double gia;
-    private String loai;
-    public Menu(){}
-    public Menu(String ten, long id, double gia, String loai){
-        this.menuten = menuten;
-        this.menuid = menuid;
-        this.gia = gia;
-        this.loai = loai;
+    private int idCaffe;
+    private String loaiCafes;
+    private double donGia;
+    private String loaiDoUong;
+    public Menu() {}
+    public Menu(int idCaffe, String loaiCafes, String loaiDoUong, double donGia) {
+        this.loaiCafes = loaiCafes;
+        this.donGia = donGia;
+        this.loaiDoUong = loaiDoUong;
+        this.idCaffe = idCaffe;
     }
 
-    public String getTen() {
-        return menuten;
+    public int getIdCaffe() {
+        return idCaffe;
     }
 
-    public void setTen(String ten) {
-        this.menuten = menuten;
+    public void setIdCaffe(int idCaffe) {
+        this.idCaffe = idCaffe;
     }
 
-    public long getId() {
-        return menuid;
+    public String getLoaiCafes() {
+        return loaiCafes;
     }
 
-    public void setId(long id) {
-        this.menuid = id;
+    public void setLoaiCafes(String loaiCafes) {
+        this.loaiCafes = loaiCafes;
     }
 
-    public double getGia() {
-        return gia;
+    public double getDonGia() {
+        return donGia;
     }
 
-    public void setGia(double gia) {
-        this.gia = gia;
+    public void setDonGia(double donGia) {
+        this.donGia = donGia;
     }
 
-    public String getLoai() {
-        return loai;
+    public String getLoaiDoUong() {
+        return loaiDoUong;
     }
 
-    public void setLoai(String loai) {
-        this.loai = loai;
+    public void setLoaiDoUong(String loaiDoUong) {
+        this.loaiDoUong = loaiDoUong;
+    }
+
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "IdCaffe=" + idCaffe +
+                ", LoaiCafe='" + loaiCafes + '\'' +
+                ", Gia=" + donGia +
+                ", LoaiDoUong='" + loaiDoUong + '\'' +
+                '}';
     }
 }

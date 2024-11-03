@@ -3,14 +3,14 @@ package Model;
 public class NhanVien {
     private long id;
     private String ten;
-    private float luongmotgio;
-    private int sogiolam;
+    private float luongMotGio;
+    private int soGioLam;
     public NhanVien() {}
     public NhanVien(long id, String ten, float luongmotgio, int sogiolam) {
         this.id = id;
         this.ten = ten;
-        this.luongmotgio = luongmotgio;
-        this.sogiolam = sogiolam;
+        this.luongMotGio = luongMotGio;
+        this.soGioLam = soGioLam;
     }
 
     public long getId() {
@@ -29,22 +29,23 @@ public class NhanVien {
         this.ten = ten;
     }
 
-    public float getLuongmotgio() {
-        return luongmotgio;
+    public float getLuongMotGio() {
+        return luongMotGio;
     }
 
-    public void setLuongmotgio(float luongmotgio) {
-        this.luongmotgio = luongmotgio;
+    public void setLuongMotGio(float luongMotGio) {
+        this.luongMotGio = luongMotGio;
     }
 
-    public int getSogiolam() {
-        return sogiolam;
+    public int getSoGioLam() {
+        return soGioLam;
     }
 
-    public void setSogiolam(int sogiolam) {
-        this.sogiolam = sogiolam;
+    public void setSoGioLam(int soGioLam) {
+        this.soGioLam = soGioLam;
     }
     public float tongluong(){
-        return luongmotgio*sogiolam;
+
+        return luongMotGio*soGioLam;
     }
 }
